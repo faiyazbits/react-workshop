@@ -40,17 +40,17 @@ class CounterList extends React.Component {
     OnIncrementCounter = () => {
         console.log("increment")
         this.setState({
-            counters: this.state.counters.map((counter) => counter.id !== this.selectedCounter ? {
+            counters: this.state.counters.filter((counter) => counter.id !== this.selectedCounter ? {
                 ...counter,
-                count:++counter.count
+                count: ++counter.count
             } : counter)
         })
     }
     OnDecrementCounter = () => {
         this.setState({
-            counters: this.state.counters.map((counter) => counter.id !== this.selectedCounter ? {
+            counters: this.state.counters.filter((counter) => counter.id !== this.selectedCounter ? {
                 ...counter,
-                count:--counter.count
+                count: --counter.count
             } : counter)
         })
 
