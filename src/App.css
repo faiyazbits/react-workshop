@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 .App {
   text-align: center;
 }
@@ -26,6 +28,49 @@
 
 .App-link {
   color: #61dafb;
+}
+.memberlist {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+.topiclist {
+  background-color: cadetblue;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  text-align: start;
+}
+.addbtn {
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+.addTopics {
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+#inputBox {
+  background-color: cornsilk;
+  width: 30%;
+  height: 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+}
+#addtask {
+  margin-left: 5px;
+  width: 3%;
+  height: 25px;
+  background-color: cornsilk;
+  border-radius: 5px;
+}
+.card-list-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.control-buttons {
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {
