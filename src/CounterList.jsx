@@ -5,6 +5,7 @@ import CounterControl from "./CounterControl";
 class CounterList extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             counters: [
                 {
@@ -26,7 +27,8 @@ class CounterList extends React.Component {
                     color: "green"
                 }
             ],
-            selectedCounter: 1
+            selectedCounter: 1,
+
         }
     }
 
@@ -35,6 +37,25 @@ class CounterList extends React.Component {
             selectedCounter: selectedCounterId
         })
     }
+    OnIncrementCounter = () => {
+        console.log("increment")
+        this.setState({
+            counters: this.state.counters.map((counter) => counter.id !== this.selectedCounter ? {
+                ...counter,
+                count:++counter.count
+            } : counter)
+        })
+    }
+    OnDecrementCounter = () => {
+        this.setState({
+            counters: this.state.counters.map((counter) => counter.id !== this.selectedCounter ? {
+                ...counter,
+                count:--counter.count
+            } : counter)
+        })
+
+    }
+
 
     render() {
         return (
@@ -49,7 +70,8 @@ class CounterList extends React.Component {
                         })
                     }
                 </div>
-                <CounterControl />
+                <CounterControl incrementCounterClick={this.OnIncrementCounter}
+                                decrementCounterClick={this.OnDecrementCounter}/>;
             </>
         );
     }
