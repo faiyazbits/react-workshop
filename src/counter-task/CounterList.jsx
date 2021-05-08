@@ -57,7 +57,7 @@ export default class CounterList extends Component {
     render() {
         return (
             <>
-                <div className="card-list-wrapper">
+                <div className="counter-card-list-wrapper">
                     {this.state.counters.map((counter) => {
                         return <Counter key={counter.id}
                             counterInfo={counter}
