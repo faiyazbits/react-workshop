@@ -1,6 +1,5 @@
 import './App.css';
-import CounterList from "./CounterList";
-import UserList from "./UserList";
+import UserList from "./UserListUiTask/UserList";
 
 function App() {
     return (
