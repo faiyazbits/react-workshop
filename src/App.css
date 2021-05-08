@@ -44,3 +44,18 @@
 .margin {
   margin: 20px;
 }
+
+.fw-bold {
+font-weight: 600 !important;
+}
+.text-gray{
+  font-size: .875em;
+  color: gray;
+}
+.form-select {
+  max-width: 200px !important;
+}
+
+.display-block {
+  display: block !important;
+}

@@ -1,10 +1,11 @@
 import './App.css';
 import CounterList from "./CounterList";
+import UserList from "./UserList";
 
 function App() {
     return (
         <div className="App">
-            <CounterList/>
+            <UserList/>
         </div>
     );
 }
