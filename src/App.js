@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CounterList from './counter-task/CounterList';
 import TaskList from './task-list-UI/TaskList';
+import UserList from './user-list/UserList'
 import history from './history';
 import './App.css';
 import {
@@ -37,9 +38,9 @@ export default class App extends Component {
               <Route path="/tasks">
                 <TaskList />
               </Route>
-              {/* <Route path="/users">
-                <User-List />
-              </Route> */}
+              <Route path="/users">
+                <UserList />
+              </Route>
               <Route path="/">
                 <CounterList />
               </Route>

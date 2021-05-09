@@ -9,7 +9,7 @@
   padding: 20px;
 }
 
-.task-btn,.task-btn:hover {
+.task-btn, .task-btn:hover {
   background-color: #f3b773;
   border-color: #f3b773;
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(46 54 80 / 8%);
@@ -29,30 +29,36 @@
   vertical-align: super;
 }
 
-a{
+a {
   text-decoration: none;
 }
-.fa-star,.fa-ellipsis-h{
+
+.fa-star, .fa-ellipsis-h {
   font-size: 30px;
 }
-.fa-star:hover{
+
+.fa-star:hover {
   cursor: pointer;
   color: #f3b773;
   border-color: #f3b773;
 }
-.fa-star{
+
+.fa-star {
   color: #d1d5db;
 }
+
 .line-through {
   text-decoration: line-through;
 }
+
 .card.hover-state:hover {
   background-color: #f3f4f6;
 }
 
-.fw-normal{
+.fw-normal {
   cursor: pointer;
 }
+
 .form-check-input:checked {
   background-color: black;
   border-color: black;
@@ -81,11 +87,29 @@ a{
   border-color: #f3b773;
 }
 
-.arrow{
-  background-color: #f3f4f6 ;
+.arrow {
+  background-color: #f3f4f6;
   border-radius: 1rem;
 }
 
-.bg-purple{
+.bg-purple {
   background-color: #8965e0!important;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.user-item {
+  background-color: aquamarine;
+  flex-basis: 25%;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 15px;
+}
+
+span {
+  font-weight: bold;
 }
